@@ -1,0 +1,16 @@
+.FeedbackWidget {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.FeedbackWidget-h1 {
+  color: rgb(0, 0, 0);
+}
+.FeedbackWidget-Ststistics {
+  display: flex;
+  flex-direction: column;
+}
+.visible {
+  display: none;
+}
