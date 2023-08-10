@@ -27,12 +27,12 @@ export const FeedbackWidget = () => {
   };
 
   useEffect(() => {
-    const allOpinion = good + bad;
+    const Opinion = good + bad;
     let ssss =
-      allOpinion > 0 ? `${((100 * good) / allOpinion).toFixed(2)}%` : `0.00%`;
+      Opinion > 0 ? `${((100 * good) / Opinion).toFixed(2)}%` : `0.00%`;
 
     setPositiveFeedbackPercentage(ssss);
-  });
+  }, [good, neutral, bad]);
 
   return (
     <div className="FeedbackWidget">
