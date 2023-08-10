@@ -11,7 +11,7 @@ export const FeedbackWidget = () => {
   const [visible, setVisible] = useState(false);
   const [totalCount, setTotalCount] = useState(0);
   const [positiveFeedbackPercentage, setPositiveFeedbackPercentage] =
-    useState(`0.00%`);
+    useState('');
 
   const handlerButton = evt => {
     const id = evt.target.id;
@@ -61,4 +61,12 @@ export const FeedbackWidget = () => {
       </div>
     </div>
   );
+};
+FeedbackWidget.propTypes = {
+  good: PropTypes.number,
+  neutral: PropTypes.number,
+  bad: PropTypes.number,
+  visible: PropTypes.bool,
+  totalCount: PropTypes.number,
+  positiveFeedbackPercentage: PropTypes.string,
 };
